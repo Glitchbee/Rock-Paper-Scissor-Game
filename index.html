@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(25,25,25);
+            color: #fff;
+            font-family: Arial;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        .container{
+            padding: 2em 0;
+            width: 90%;
+            margin: 0 auto;
+            /* border: 2px solid red; */
+        }
+        .img-chg{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background:transparent;
+        }
+
+        .btn-img{
+            background-color: transparent;
+            color: #fff;
+            border-radius: 10px;
+            margin-right: 1.5em;
+        }
+    </style>
+    <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <button class="btn-img" onclick="choiceRock()"><img class="img-chg" src="./rock-emoji.png">Rock</button>
+    <button class="btn-img" onclick="choicePaper()"><img class="img-chg"src="./paper-emoji.png">Paper</button>
+    <button class="btn-img" onclick="choiceScissors()"><img class="img-chg" src=scissors-emoji.png>Scissors</button>
+    <p class="res"></p>
+    <p class="choice-of-two"></p>
+    <p class="game-res"></p>
+    <button onclick="resetScore()">Reset Score</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
